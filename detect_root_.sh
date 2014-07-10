@@ -12,6 +12,8 @@ if [ $(id -u) != "0" ]; then
     printf "The current user has no root privilages\n"
     exit 1
     
-if [ $(id -u) != "1" ]; then
+elif [ $(id -u) != "1" ]; then
     printf "Good! Your user account has full root privilage!\n"
     exit 1
+    
+else echo "invalid."
