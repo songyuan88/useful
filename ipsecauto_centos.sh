@@ -5,13 +5,13 @@
 #
 
 echo "+----------------------------------------------------------+"
-echo "|IPsecAuto version 0.1-beta by Alex Fang    |"
-echo "|Automated Cisco IPsec Installation CentOS|"
-echo "|      Author: Alex Fang |  frjalex@gmail.com |"
-echo "|Liscence & Legal: Released under GPLv2   |"
-echo "|Bug Reports:    frjalex@gmail.com               |"
-echo "|           Bug List on GitHub.   Enjoy.               |"d
-echo "+--------------------------------------------------------------
+echo "|      IPsecAuto version 0.1-beta by Alex Fang             |"
+echo "|     Automated Cisco IPsec Installation CentOS            |"
+echo "|      Author: Alex Fang |  frjalex@gmail.com              |"
+echo "|     Liscence & Legal: Released under GPLv2               |"
+echo "|        Bug Reports:    frjalex@gmail.com                 |"
+echo "|           Bug List on GitHub.   Enjoy.                   |"
+echo "+----------------------------------------------------------+"
 
 echo "Now we're Detecting the installation Environment."
 echo "Please choose your Linux Distro Type:"
