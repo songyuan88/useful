@@ -20,21 +20,6 @@ echo "Press enter to continue..." $entercontinue ; read entercontinue
 echo "Press 1 if u ONLY WANT to edit the iptables rules." $entercontinue2 ; read entercontinue2
 
 
-if [ $entercontinue2 = 1 ] then
-  wget raw.githubusercontent.com/frjalex/useful/master/racoon_iptables.sh
-  echo "use sh racoon_iptables.sh to run this."
-  exit 1
-fi
-
-
-echo "-----------------Downloading Config File---------------------"
-FILEPATH=/etc/racoon
-echo "Please enter your path your racoon was installed. The default path will be /etc/racoon." read FILEPATH ;
-echo "the path you entered is" $FILEPATH
-cd $FILEPATH
-
-rm -f racoon.conf
-wget https://raw.githubusercontent.com/frjalex/useful/master/racoon.conf --no-check-certificate
 
 echo "Custom and edit your racoon.conf by yourself after install. Enter to set iptables rules:" read entercontinue ;
 $CLIENTIP=10.1.0.0/24
