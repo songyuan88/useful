@@ -21,17 +21,8 @@ echo "Press 1 if u ONLY WANT to edit the iptables rules." $entercontinue2 ; read
 
 
 if [ $entercontinue2 = 1 ] then
-  echo "Custom and edit your racoon.conf by yourself after install. Enter to set iptables rules:" read entercontinue ;
-  $CLIENTIP=10.1.0.0/24
-  echo "enter your Client IP Address of racoon.conf. Enter to use the default(recommend)" $CLIENTIP ; read CLIENTIP
-  apt-get update && apt-get -y install iptables
-  iptables -A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
-  iptables -A INPUT -p udp -m udp --dport 500 -j ACCEPT
-  iptables -A INPUT -p udp -m udp --dport 4500 -j ACCEPT
-  iptables -A INPUT -p esp -j ACCEPT
-  iptables -A INPUT -s 127.0.0.0/24 -d 127.0.0.0/24 -j ACCEPT
-  iptables -A FORWARD -s $CLIENTIP -j ACCEPT
-  iptables -t nat -A POSTROUTING -s $CLIENTIP -o eth0 -j MASQUERADE
+  wget raw.githubusercontent.com/frjalex/useful/master/racoon_iptables.sh
+  echo "use sh racoon_iptables.sh to run this."
   exit 1
 fi
 
