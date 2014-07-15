@@ -32,6 +32,7 @@ if [ $entercontinue2 = 1 ] then
   iptables -A INPUT -s 127.0.0.0/24 -d 127.0.0.0/24 -j ACCEPT
   iptables -A FORWARD -s $CLIENTIP -j ACCEPT
   iptables -t nat -A POSTROUTING -s $CLIENTIP -o eth0 -j MASQUERADE
+  exit 1
 fi
 
 
