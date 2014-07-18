@@ -15,6 +15,10 @@ IKEv2Auto
 IKEv2Auto is still in Alpha. It is originally IPSecAuto2 and has an amazing support of IPSec IKEv2. That means it supports windows and windows phone. We're still developing a version for ArchLinux now.
 
 
+Pigsay.sh / Pdogsay.sh
+==========================
+Inspired by cowsay (on Linux).
+
 Liscencing & Legal
 ===========================
 All contents, softwares, repos, and scripts' copyrights owned by Alex Fang, all rights reserved.
@@ -31,7 +35,9 @@ Author
 ================
 Alex Fang.
 
-Contacts
+
+
+Contect
 ==================
 email
 frjalex@gmail.com
