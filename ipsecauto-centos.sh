@@ -154,7 +154,7 @@ echo "Your DNS2 is" $dns2
 echo "Your username is" $username
 echo "+-----------------------------------------------------+"
 
-
+exit 0
 
 
 
