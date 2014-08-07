@@ -4,6 +4,13 @@
 #IPsecAuto version 0.1-beta-centos  by Alex Fang
 #
 
+if [ $(id -u) != "0" ]; then
+    echo "The current user has no root privilages\n"
+    exit 1
+fi
+
+clear
+
 echo "+----------------------------------------------------------+"
 echo "|      IPsecAuto version 0.1-beta by Alex Fang             |"
 echo "|     Automated Cisco IPsec Installation CentOS            |"
@@ -17,17 +24,7 @@ echo "Now we're Detecting the installation Environment."
 echo "Please choose your Linux Distro Type:"
 echo "1 for CentOS, 2 For Others." $ltype ; read ltype
 
-if [ $ltype = 2 ] then
-   echo "This Script is for CentOS. Quitting..."
-   exit 1
-fi
 
-echo "Detecting if U have root..."
-
-if [ $(id -u) != "0" ]; then
-    echo "The current user has no root privilages\n"
-    exit 1
-fi
 
 echo "Informations Gethered...Entering Installation..."
 echo "Success. Press anyket to continue..." $ifcontinue ; read ifcontinue
