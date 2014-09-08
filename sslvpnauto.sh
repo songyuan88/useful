@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ $(id -u) != "0" ]; then
-    echo "The current user has no root privilages"
+    echo "The current user has no root privilages\n"
     exit 1
 fi
 
