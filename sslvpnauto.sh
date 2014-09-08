@@ -1,8 +1,7 @@
 #!/bin/bash
 
-#SSLVPNauto.sh Version 0.1-alpha-1 by Alex Fang. Copyright (C) Alex Fang frjalex@gmail.com All Rights Reserved
 if [ $(id -u) != "0" ]; then
-    echo "ERR:The current user has no root privilages\n"
+    echo "The current user has no root privilages"
     exit 1
 fi
 
