@@ -1,0 +1,56 @@
+type: m
+empty: false
+
+manager:
+    address: 127.0.0.1:4009
+    password: '123456'
+
+plugins:
+    flowSaver:
+        use: true
+    user:
+        use: true
+    account:
+        use: true
+        pay:
+            hour:
+                price: 0.05
+                flow: 500000000
+            day:
+                price: 0.5
+                flow: 7000000000
+            week:
+                price: 3
+                flow: 50000000000
+            month:
+                price: 10
+                flow: 200000000000
+            season:
+                price: 30
+                flow: 200000000000
+            year:
+                price: 120
+                flow: 200000000000
+    email:
+        use: true
+        username: 'postmaster@sandbox62cf8a70a277451cb5fd984bd9c334d2.mailgun.org'
+        password: 'd17948acadd6b63b3e386ea6a98d2f93-e89319ab-fa1e57df'
+        host: 'smtp.mailgun.org'
+        port: 25
+        
+    webgui:
+        use: true
+        host: '0.0.0.0'
+        port: '80'
+        site: 'http://127.0.0.1'
+        gcmSenderId: '456102641793'
+        gcmAPIKey: 'AAAAGzzdqrE:XXXXXXXXXXXXXX'
+    alipay:
+        use: true
+        appid: 
+        notifyUrl: ''
+        merchantPrivateKey: ''
+        alipayPublicKey: ''
+        gatewayUrl: 'https://openapi.alipay.com/gateway.do'
+
+db: 'webgui.sqlite'
